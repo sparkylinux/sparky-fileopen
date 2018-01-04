@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Sparky FileOpen provides simply configuration scripts
+# which choose a file manager for Sparky applications
+# Created by Paweł "pavroo' Pijanowski 2018/01/04
+# Copyright 2018 under the GNU GPL2 License
+# Last update 2018/01/04
+
+if [ -f /usr/bin/thunar ]; then
+	/usr/bin/thunar
+
+elif [ -f /usr/bin/pcmanfm ]; then
+	/usr/bin/pcmanfm
+
+elif [ -f /usr/bin/pcmanfm-qt ]; then
+	/usr/bin/pcmanfm-qt
+
+elif [ -f /usr/bin/caja ]; then
+	/usr/bin/caja
+
+elif [ -f /usr/bin/nemo ]; then
+	/usr/bin/nemo
+
+elif [ -f /usr/bin/nautilus ]; then
+	/usr/bin/nautilus
+
+elif [ -f /usr/bin/spacefm ]; then
+	/usr/bin/spacefm
+
+elif [ -f /usr/bin/sparky-terminal ] && [ -f /usr/bin/mc ]; then
+	/usr/bin/sparky-terminal -e /usr/bin/mc
+
+elif [ -f /usr/bin/dolphin ]; then
+	/usr/bin/dolphin
+
+else
+	xmessage "No file manager installed...Exiting..."
+fi
+
+exit 0
+
