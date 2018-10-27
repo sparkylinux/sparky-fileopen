@@ -16,6 +16,8 @@
 
 if [ "$1" = "uninstall" ]; then
 	rm -f /usr/bin/sparky-fileopen
+	rm -f /usr/share/applications/sparky-fileopen.desktop
 else
 	cp bin/* /usr/bin/
+	cp share/* /usr/share/applications/
 fi
