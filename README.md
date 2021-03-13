@@ -1,7 +1,7 @@
 Sparky FileOpen
 Sparky FileOpen provides simply configuration scripts which choose a file manager for Sparky applications
 
-Copyright (C) 2018-2019 Paweł Pijanowski and others, see copyright file.
+Copyright (C) 2018-2021 Paweł Pijanowski and others, see copyright file.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Dependencies:
 -------------
 sparky-xterm (>= 0.2.0)
-thunar | pcmanfm | pcmanfm-qt | caja | nemo | nautilus | spacefm | mc | dolphin
+thunar | pcmanfm | pcmanfm-qt | caja | nemo | nautilus | spacefm | mc | dolphin | qtfm | polo-file-manager
 x11-utils
 
 Install:
