@@ -43,7 +43,7 @@ elif [ -f /usr/bin/tuxcmd ]; then
 	/usr/bin/tuxcmd
 
 elif [ -f /usr/bin/doublecmd ]; then
-	/usr/bin/doublecmd
+	/usr/bin/doublecmd $HOME
 
 elif [ -f /usr/bin/krusader ]; then
 	/usr/bin/krusader
