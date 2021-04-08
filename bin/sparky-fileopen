@@ -4,7 +4,7 @@
 # which choose a file manager for Sparky applications
 # Created by Paweł "pavroo' Pijanowski 2018/01/04
 # Copyright 2018-2021 under the GNU GPL2 License
-# Last update 2021/03/13
+# Last update 2021/04/08
 
 if [ -f /usr/bin/thunar ]; then
 	/usr/bin/thunar $HOME
@@ -27,9 +27,6 @@ elif [ -f /usr/bin/nautilus ]; then
 elif [ -f /usr/bin/spacefm ]; then
 	/usr/bin/spacefm $HOME
 
-elif [ -f /usr/bin/sparky-xterm ] && [ -f /usr/bin/mc ]; then
-	/usr/bin/sparky-xterm /usr/bin/mc
-
 elif [ -f /usr/bin/dolphin ]; then
 	/usr/bin/dolphin $HOME
 
@@ -39,8 +36,33 @@ elif [ -f /usr/bin/qtfm ]; then
 elif [ -f /usr/bin/polo-gtk ]; then
 	/usr/bin/polo-gtk $HOME
 
+elif [ -f /usr/local/bin/sunflower ]; then
+	/usr/local/bin/sunflower
+
+elif [ -f /usr/bin/tuxcmd ]; then
+	/usr/bin/tuxcmd
+
+elif [ -f /usr/bin/doublecmd ]; then
+	/usr/bin/doublecmd
+
+elif [ -f /usr/bin/krusader ]; then
+	/usr/bin/krusader
+
+elif [ -f /usr/bin/rox ]; then
+	/usr/bin/rox
+
+elif [ -f /usr/bin/worker ]; then
+	/usr/bin/worker
+
+elif [ -f /usr/bin/xfe ]; then
+	/usr/bin/xfe
+
+elif [ -f /usr/bin/sparky-xterm ] && [ -f /usr/bin/mc ]; then
+	/usr/bin/sparky-xterm /usr/bin/mc
+	
 else
 	xmessage "No file manager installed...Exiting..."
+	echo "No file manager installed...Exiting..."
 fi
 
 exit 0

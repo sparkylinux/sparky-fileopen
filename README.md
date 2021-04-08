@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Dependencies:
 -------------
 sparky-xterm (>= 0.2.0)
-thunar | pcmanfm | pcmanfm-qt | caja | nemo | nautilus | spacefm | mc | dolphin | qtfm | polo-file-manager
+thunar | pcmanfm | pcmanfm-qt | caja | nemo | nautilus | spacefm | mc | dolphin | qtfm | polo-file-manager | sunflower | tuxcmd | doublecmd-gtk | doublecmd-qt | krusader | rox-filer | worker | xfe
 x11-utils
 
 Install:
