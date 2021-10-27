@@ -4,7 +4,7 @@
 # which choose a file manager for Sparky applications
 # Created by Paweł "pavroo' Pijanowski 2018/01/04
 # Copyright 2018-2021 under the GNU GPL2 License
-# Last update 2021/04/08
+# Last update 2021/10/23
 
 if [ -f /usr/bin/thunar ]; then
 	/usr/bin/thunar $HOME
@@ -59,6 +59,9 @@ elif [ -f /usr/bin/xfe ]; then
 
 elif [ -f /usr/bin/sparky-xterm ] && [ -f /usr/bin/mc ]; then
 	/usr/bin/sparky-xterm /usr/bin/mc
+	
+elif [ -f /usr/bin/sparky-xterm ] && [ -f /usr/bin/lfm ]; then
+	/usr/bin/sparky-xterm /usr/bin/lfm
 	
 else
 	xmessage "No file manager installed...Exiting..."
